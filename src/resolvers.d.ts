@@ -13,3 +13,4 @@ export { FindByIdArgs } from './resolvers/findById';
 export { FindByIdsArgs } from './resolvers/findByIds';
 export { FindOneArgs } from './resolvers/findOne';
 export { FindManyArgs } from './resolvers/findMany';
+// export { DistinctArgs } from '../distinct';

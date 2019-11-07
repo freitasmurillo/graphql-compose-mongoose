@@ -6,6 +6,8 @@ import count from './count';
 import createOne from './createOne';
 import createMany from './createMany';
 
+import distinct from './distinct';
+
 import findById from './findById';
 import findByIds from './findByIds';
 import findMany from './findMany';
@@ -59,6 +61,7 @@ export {
   count,
   pagination,
   connection,
+  distinct,
 };
 
 export function getAvailableNames(): string[];
@@ -79,4 +82,5 @@ export const EMCResolvers: {
   count: 'count';
   connection: 'connection';
   pagination: 'pagination';
+  distinct: 'distinct';
 };

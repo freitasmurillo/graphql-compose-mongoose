@@ -8,6 +8,8 @@ import createMany from './createMany';
 
 import createOne from './createOne';
 
+import distinct from './distinct';
+
 import findById from './findById';
 import findByIds from './findByIds';
 import findMany from './findMany';
@@ -61,6 +63,7 @@ export {
   count,
   pagination,
   connection,
+  distinct,
 };
 
 export function getAvailableNames(): string[] {
@@ -80,6 +83,7 @@ export function getAvailableNames(): string[] {
     'count',
     'pagination', // should be defined after `findMany` and `count` resolvers
     'connection', // should be defined after `findMany` and `count` resolvers
+    'distinct',
   ];
 }
 
@@ -100,4 +104,5 @@ export const EMCResolvers = {
   count: 'count',
   connection: 'connection',
   pagination: 'pagination',
+  distinct: 'distinct',
 };
